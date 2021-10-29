@@ -1,38 +1,16 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
+.container {
+  /* rem e medida relativa */
+  padding: 2rem;
 }
-body {
-  background-color: #f37520;
-}
+/* vamos aplicar um css que se aplique a todas as grids que comecem com col */
 
-header {
-  margin: 2vh auto;
-}
-
-header,
-nav,
-main {
-  background-color: #fff;
-  min-height: 10vh;
-}
-
-main,
-nav {
-  min-height: 82vh;
-}
-
-@media (min-width: 576px) {
-}
-
-@media (min-width: 768px) {
-}
-
-@media (min-width: 992px) {
-}
-
-@media (min-width: 1200px) {
-}
-
-@media (min-width: 1400px) {
+/* todo col que seja filho de row*/
+/*toda row que tenha uma classe que comece com um col-   ^= e um operador de busca*/
+/* lembrar de no HTML colocar as classes na sequencia correta*/
+.row > .col,
+.row > [class^="col-"] {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  background-color: rgba(243, 117, 32, 0.15);
+  border: 1px solid rgba(243, 117, 32, 0.2);
 }
