@@ -8,7 +8,8 @@
 /*toda row que tenha uma classe que comece com um col-   ^= e um operador de busca*/
 /* lembrar de no HTML colocar as classes na sequencia correta*/
 .row > .col,
-.row > [class^="col-"] {
+.row > [class^="col-"],
+.bg {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   background-color: rgba(243, 117, 32, 0.15);
