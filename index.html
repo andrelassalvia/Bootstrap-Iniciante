@@ -15,26 +15,43 @@
   </head>
   <body>
     <div class="container">
-      <div class="d-flex bg">
-        <!-- O flex-fill preenche cada elemento com todo o espaco disponivel para ele dentro da div. É dinamico conforme o conteudo do elemento.
-         -->
-        <div class="bg p-2 flex-fill d-flex justify-content-center">
-          Hcode Treinamentos
+      <div class="row">
+        <!-- Flex-wrap quebra os elementos que nao seriam exibidos dentro da div -->
+        <div class="d-flex flex-wrap bg" style="overflow: auto">
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
         </div>
-        <div class="bg p-2 flex-fill">2</div>
-        <div class="bg p-2 flex-fill">3</div>
-      </div>
-      <div class="d-flex bg">
-        <!-- O flex-grow distribui os elementos sem levar em consideracao o tamanho do conteudo. Se seu mandei o primeiro ocupar o espaco disponivel ele ira ocupar independente do do tamanho de seu conteudo-->
-        <div class="bg p-2 flex-grow-1">1</div>
-        <div class="bg p-2 flex-grow">2</div>
-        <div class="bg p-2 flex-grow">Hcode Treinamentos</div>
-      </div>
-      <div class="d-flex bg">
-        <!-- o flex-shirink diz para utilizar somente o espaco necessario para o conteudo. O w-100 ocupa todo o restante disponivel.-->
-        <div class="bg p-2 flex-shrink">1</div>
-        <div class="bg p-2 flex-grow-1">2</div>
-        <div class="bg p-2 w-100">Hcode Treinamentos</div>
+        <!-- O flex reverse inverte a ordem do wrap. -->
+        <div class="d-flex flex-wrap-reverse bg" style="overflow: auto">
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+        </div>
+        <!-- O order permite posicionar um elemento -->
+        <div class="d-flex flex-wrap bg" style="overflow: auto">
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex p-2 bg">justify</div>
+          <div class="d-flex order-first p-2 bg">Ultimo justify</div>
+        </div>
       </div>
     </div>
     <script
