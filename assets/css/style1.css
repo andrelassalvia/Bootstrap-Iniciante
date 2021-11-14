@@ -1,0 +1,53 @@
+.container {
+  margin-left: 5vh;
+  padding-right: 30vh;
+}
+
+.header {
+  background-color: #f37520;
+  height: 8vh;
+  margin-top: 3vh;
+}
+
+.menu {
+  color: #ededed;
+}
+
+.lateral-esquerda {
+  background-color: #ededed;
+}
+
+.principal {
+  height: 50vh;
+}
+
+.rodape {
+  background-color: #454545;
+  height: 20vh;
+}
+
+img {
+  width: 8rem;
+  height: auto;
+}
+
+.meiuca {
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+h1 {
+  font-weight: 400;
+  margin-top: 2vh;
+  margin-left: 2vh;
+}
+p {
+  margin-top: 2vh;
+  margin-left: 2vh;
+}
+
+.opcoes {
+  margin-top: 2vh;
+  margin-left: 2vh;
+  color: #696666;
+}
