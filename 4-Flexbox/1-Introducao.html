@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+      .container {
+        /* rem e medida relativa */
+        padding: 2rem;
+      }
+      /* vamos aplicar um css que se aplique a todas as grids que comecem com col */
+      /* todo col que seja filho de row*/
+      /*toda row que tenha uma classe que comece com um col-   ^= e um operador de busca*/
+      /* lembrar de no HTML colocar as classes na sequencia correta*/
+      .row > .col,
+      .row > [class^="col-"],
+      .bg {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        background-color: rgba(243, 117, 32, 0.15);
+        border: 1px solid rgba(243, 117, 32, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Coloca os elementos na mesma linha-->
+      <div class="d-flex bg">
+        <div class="bg p-2">1</div>
+        <div class="bg p-2">2</div>
+      </div>
+      <!-- Inline ocupa somente o espaco necessario dos elementos-->
+      <!-- e os mantem na mesma linha enquanto houver espaco na tela-->
+      <div class="d-inline-flex bg">
+        <div class="bg p-2">1</div>
+        <div class="bg p-2">2</div>
+      </div>
+      <div class="d-inline-flex bg">
+        <div class="bg p-2">1</div>
+        <div class="bg p-2">2</div>
+      </div>
+      <div class="d-inline-flex bg">
+        <div class="bg p-2">1</div>
+        <div class="bg p-2">2</div>
+      </div>
+      <div class="d-inline-flex bg">
+        <div class="bg p-2">1</div>
+        <div class="bg p-2">2</div>
+      </div>
+      <div class="d-inline-flex bg">
+        <div class="bg p-2">1</div>
+        <div class="bg p-2">2</div>
+      </div>
+      <div class="d-flex bg">
+        <div class="bg p-2">1</div>
+        <div class="bg p-2">2</div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
