@@ -1,0 +1,54 @@
+header,
+footer {
+  background-color: #eeeeee;
+  padding: 5px;
+  min-height: 60px;
+}
+
+header img,
+.list-group img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+header img {
+  margin-left: 16px;
+}
+main {
+  background-color: #e5ddd5;
+  min-height: calc(100vh - 121px);
+}
+header {
+  border: #dbdbdb 1px solid;
+  border-top: 0px;
+}
+h6 {
+  margin: 0;
+}
+.timeago {
+  color: #999;
+  font-size: 0.8em;
+}
+#search {
+  background-color: #f8f8f8;
+  min-height: 50px;
+}
+p {
+  color: #999;
+  font-size: 10px;
+  margin: 0;
+}
+.msg {
+  background-color: #09d261;
+  margin-top: 2px;
+}
+.panel-left {
+  border-right: #dbdbdb 1px solid;
+}
+.panel-left small {
+  color: #9b9b9b;
+}
+.list-group-item {
+  border: none;
+  border-bottom: #f8f8f8 1px solid;
+}
